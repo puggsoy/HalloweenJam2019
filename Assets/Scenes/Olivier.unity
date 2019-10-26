@@ -240,6 +240,7 @@ GameObject:
   - component: {fileID: 249195768}
   - component: {fileID: 249195767}
   - component: {fileID: 249195766}
+  - component: {fileID: 249195771}
   m_Layer: 0
   m_Name: Candy
   m_TagString: Untagged
@@ -279,7 +280,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: ef40412f08c17de418eb9729ad068d00, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -340,11 +341,24 @@ Transform:
   m_GameObject: {fileID: 249195765}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.88, y: -0.94, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &249195771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249195765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 577148a89a5dedc44935934b998c8603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  candyVelocity: 10
 --- !u!1 &487216009
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,7 +924,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1189309558}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 4587366abf55a314aaa0c2ed2a05e1e8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
