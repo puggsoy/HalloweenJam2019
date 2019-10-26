@@ -26,11 +26,12 @@ public class CandyThrow : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.tag == "Arm")
+        if (collider.gameObject.tag == "Arm")
         {
-            Debug.Log("Arm Throw");
+            CreateCandy();
+            //Debug.Log("Arm Throw");
         }
     }
 
