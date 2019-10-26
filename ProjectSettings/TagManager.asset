@@ -14,11 +14,11 @@ TagManager:
   - UI
   - 
   - 
-  - Kids
-  - GrandMa
-  - Candy
-  - Floor/Walls
-  - Background
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -41,4 +41,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Kids
+    uniqueID: 76218945
+    locked: 0
+  - name: Grand Ma
+    uniqueID: 2837263431
+    locked: 0
+  - name: Candy
+    uniqueID: 554227363
+    locked: 0
+  - name: Floor/Walls
+    uniqueID: 806158823
+    locked: 0
+  - name: Background
+    uniqueID: 3005763259
     locked: 0

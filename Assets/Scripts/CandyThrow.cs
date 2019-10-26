@@ -8,8 +8,8 @@ public class CandyThrow : MonoBehaviour
     public int candyMin = 1;
     private int candyNumbers;
     public int candyMax = 6;
-    public float candyMinSpeed = 1f;
-    public float candyMaxSpeed = 10f;
+    public float candyMinSpeed = .1f;
+    public float candyMaxSpeed = .2f;
     //public float candyMinDirection;
     //public float candyMaxDirection;
     public List<GameObject> candyList;
@@ -42,9 +42,14 @@ public class CandyThrow : MonoBehaviour
 
         //Debug.Log("Candy to be spawned are "+candySpawns);
         //for each candySpawns, random select prefab, spawn candy, random select direction, random select force
-        int candyCount = SelectCandy();
-        GameObject spawnedCandy = SpawnCandy(candyCount);
-        ThrowCandy(spawnedCandy);
+        do
+        {
+            int candyCount = SelectCandy();
+            GameObject spawnedCandy = SpawnCandy(candyCount);
+            ThrowCandy(spawnedCandy);
+            candyNumbers -= 1;
+        }
+        while (candyNumbers > 0);
     }
 
     int SelectCandy()
