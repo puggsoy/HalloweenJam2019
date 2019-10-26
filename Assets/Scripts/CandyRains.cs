@@ -22,10 +22,11 @@ public class CandyRains : MonoBehaviour
         {
             throwCandy();
         }
-        candyRandomDirection = Random.Range(-1f, 1f);
+
 
 
     }
+
 
     void createCandy()
     {
@@ -37,6 +38,7 @@ public class CandyRains : MonoBehaviour
         candyVelocity = Random.Range(10f, 20f);
         candyRigidBody.AddForce(transform.up * candyVelocity, ForceMode2D.Impulse);
         candyVelocity = Random.Range(20f, 40f);
+        candyRandomDirection = Random.Range(-1f, 1f);
         candyRigidBody.AddForce(transform.right * candyVelocity*candyRandomDirection, ForceMode2D.Impulse);
 
     }
