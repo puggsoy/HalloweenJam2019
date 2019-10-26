@@ -5,22 +5,23 @@ using UnityEngine;
 public class KidMoves : MonoBehaviour
 {
     public float kidMoveSpeed;
-    private Rigidbody kidRigidBody;
-    private Vector3 kidVector3;
+    private Rigidbody2D kidRigidBody;
+    private Vector2 kidVector2;
 
     // Start is called before the first frame update
     void Start()
     {
         kidMoveSpeed = 10f;
-        kidRigidBody = GetComponent<Rigidbody>();
+        kidRigidBody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float hAxis = Input.GetAxis("Horizontal");
-        kidVector3 = transform.TransformDirection(hAxis, 0, 0) * kidMoveSpeed * Time.deltaTime;
-        kidRigidBody.MovePosition(transform.position + kidVector3);
+        kidVector2 = transform.TransformDirection(hAxis, 0,0) * kidMoveSpeed * Time.deltaTime;
+        Vector2 whereLegs = transform.position;
+        kidRigidBody.MovePosition(whereLegs + kidVector2);
     }
 
 }
