@@ -5,22 +5,27 @@ using UnityEngine;
 public class KidMoves : MonoBehaviour
 {
 	public float kidMoveSpeed = 3;
+	public float jumpForce = 10;
+
     private Rigidbody2D kidRigidBody;
     private Vector2 kidVector2;
 	private Animator animator;
 
-    void Start()
+	private bool jumpDown = false;
+
+	private void Start()
     {
         kidRigidBody = GetComponent<Rigidbody2D>();
 		animator = GetComponent<Animator>();
     }
 
-    void Update()
+	private void FixedUpdate()
     {
         float hAxis = Input.GetAxis("Horizontal");
-        kidVector2 = transform.TransformDirection(hAxis, 0,0) * kidMoveSpeed * Time.deltaTime;
-        Vector2 whereLegs = transform.position;
-        kidRigidBody.MovePosition(whereLegs + kidVector2);
+		kidVector2 = transform.TransformDirection(hAxis, 0, 0) * kidMoveSpeed * Time.fixedDeltaTime;
+		//Vector2 whereLegs = transform.position;
+		//kidRigidBody.MovePosition(whereLegs + kidVector2);
+		kidRigidBody.AddForce(kidVector2);
 
 		animator?.SetBool("OnOff", hAxis != 0);
 
@@ -34,5 +39,19 @@ public class KidMoves : MonoBehaviour
 		{
 			transform.localScale = new Vector2(Mathf.Abs(scale.x) * 1, scale.y);
 		}
+
+		float jumpAxis = Input.GetAxisRaw("Jump");
+
+		if (jumpAxis > 0 && !jumpDown)
+		{
+			Jump();
+		}
+
+		jumpDown = jumpAxis > 0;
+	}
+
+	private void Jump()
+	{
+		kidRigidBody.AddForce(new Vector2(0, jumpForce));
 	}
 }
