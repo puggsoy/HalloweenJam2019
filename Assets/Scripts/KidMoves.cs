@@ -12,6 +12,8 @@ public class KidMoves : MonoBehaviour
 	public float jumpForce = 10;
     public int kidNumber;
 
+	public int Score { get; private set; }
+
     private Rigidbody2D kidRigidBody;
     private Vector2 kidVector2;
 	private Animator animator;
@@ -53,11 +55,11 @@ public class KidMoves : MonoBehaviour
 		float velocityDeadzone = 0.1f;
 		Vector3 scale = transform.localScale;
 
-		if (kidRigidBody.velocity.x > velocityDeadzone)
+		if (hAxis > 0)
 		{
 			transform.localScale = new Vector2(Mathf.Abs(scale.x) * -1, scale.y);
 		}
-		else if (kidRigidBody.velocity.x < -velocityDeadzone)
+		else if (hAxis < 0)
 		{
 			transform.localScale = new Vector2(Mathf.Abs(scale.x) * 1, scale.y);
 		}
@@ -79,8 +81,7 @@ public class KidMoves : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.collider.CompareTag("Floor") ||
-			collision.otherCollider.CompareTag("Floor"))
+		if (collision.collider.CompareTag("Floor"))
 		{
 			isTouchingGround = true;
 		}
@@ -88,10 +89,14 @@ public class KidMoves : MonoBehaviour
 
 	private void OnCollisionExit2D(Collision2D collision)
 	{
-		if (collision.collider.CompareTag("Floor") ||
-			collision.otherCollider.CompareTag("Floor"))
+		if (collision.collider.CompareTag("Floor"))
 		{
 			isTouchingGround = false;
 		}
+	}
+
+	public void CollectCandy()
+	{
+		Score++;
 	}
 }
