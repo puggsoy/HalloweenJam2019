@@ -86,7 +86,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: Layer 9 copy 2
+  - name: Bush_FG_Mid
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -94,7 +94,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 540
-      y: 1412
+      y: 1321
       width: 600
       height: 110
     spriteID: 4253500607fe2bc4e923b366315b818b
@@ -107,8 +107,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -91, y: 1412}
-  - name: Layer 9 copy
+    uvTransform: {x: -91, y: 1321}
+  - name: Bush_FG_Left
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -116,7 +116,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1614
+      y: 1523
       width: 412
       height: 200
     spriteID: 950ae91c76201534595a07d4f1702970
@@ -129,8 +129,8 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1614}
-  - name: Bush_Foreground01
+    uvTransform: {x: 4, y: 1523}
+  - name: Bush_FG_Right
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -138,7 +138,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 1412
+      y: 1321
       width: 528
       height: 194
     spriteID: d901829fd25591f4eb0d2e1d00074350
@@ -151,73 +151,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: -1388, y: 1412}
-  - name: Layer 8
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1148
-      y: 1412
-      width: 620
-      height: 51
-    spriteID: 9a42cef9f79f20741ae6d54659e82336
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 811, y: 1260}
-  - name: Layer 7
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1321
-      width: 1684
-      height: 83
-    spriteID: fa173fab56992814fbf3e12c7b0377a4
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: -144, y: 1219}
-  - name: Layer 3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 1092
-      width: 1920
-      height: 221
-    spriteID: 6d6c3301cae72bc4298996797fc40d40
-    internalID: 0
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 4, y: 1092}
+    uvTransform: {x: -1388, y: 1321}
   - name: Sky
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -240,6 +174,28 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
+  - name: Environment_1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1092
+      width: 1920
+      height: 221
+    spriteID: 928f8af784f23c240bd7685400e209c3
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1092}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
@@ -259,55 +215,34 @@ ScriptedImporter:
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: Layer 9 copy 2
-    spriteName: Layer 9 copy 2
+  - name: Bush_FG_Mid
+    spriteName: Bush_FG_Mid
     isGroup: 0
     parentIndex: -1
     spriteID: 4253500607fe2bc4e923b366315b818b
     layerID: 18
-    mosaicPosition: {x: 540, y: 1412}
-  - name: Layer 9 copy
-    spriteName: Layer 9 copy
+    mosaicPosition: {x: 540, y: 1321}
+  - name: Bush_FG_Left
+    spriteName: Bush_FG_Left
     isGroup: 0
     parentIndex: -1
     spriteID: 950ae91c76201534595a07d4f1702970
     layerID: 17
-    mosaicPosition: {x: 4, y: 1614}
-  - name: Bush_Foreground01
-    spriteName: Bush_Foreground01
+    mosaicPosition: {x: 4, y: 1523}
+  - name: Bush_FG_Right
+    spriteName: Bush_FG_Right
     isGroup: 0
     parentIndex: -1
     spriteID: d901829fd25591f4eb0d2e1d00074350
     layerID: 16
-    mosaicPosition: {x: 4, y: 1412}
-  - name: Group 1
+    mosaicPosition: {x: 4, y: 1321}
+  - name: Ground
     spriteName: 
-    isGroup: 1
+    isGroup: 0
     parentIndex: -1
-    spriteID: 
+    spriteID: 00000000000000000000000000000000
     layerID: 20
     mosaicPosition: {x: 0, y: 0}
-  - name: Layer 8
-    spriteName: Layer 8
-    isGroup: 0
-    parentIndex: 3
-    spriteID: 9a42cef9f79f20741ae6d54659e82336
-    layerID: 11
-    mosaicPosition: {x: 1148, y: 1412}
-  - name: Layer 7
-    spriteName: Layer 7
-    isGroup: 0
-    parentIndex: 3
-    spriteID: fa173fab56992814fbf3e12c7b0377a4
-    layerID: 10
-    mosaicPosition: {x: 4, y: 1321}
-  - name: Layer 3
-    spriteName: Layer 3
-    isGroup: 0
-    parentIndex: 3
-    spriteID: 6d6c3301cae72bc4298996797fc40d40
-    layerID: 5
-    mosaicPosition: {x: 4, y: 1092}
   - name: Sky
     spriteName: Sky
     isGroup: 0
