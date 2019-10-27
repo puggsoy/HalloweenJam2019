@@ -108,8 +108,8 @@ MonoBehaviour:
   candyMax: 6
   candyMinSpeed: 0.1
   candyMaxSpeed: 0.2
-  candyXOrigin: 0
-  candyYOrigin: 0
+  candyXOrigin: 5
+  candyYOrigin: 2
   candyList:
   - {fileID: 4883979286201237152, guid: 2b6fddda097212341873c432ef34328f, type: 3}
   - {fileID: 5156530972926784585, guid: 554b1ce322bcd4442af7bff66c8fd9c0, type: 3}
@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e561835837f2740b65655ef8d97464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armSpeed: -6.82
+  armSpeed: -3
 --- !u!1 &4949823802289149424
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,6 +543,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3843462387070246985, guid: 939e854c82d797e4e828723dece2874a,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 102
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 939e854c82d797e4e828723dece2874a, type: 3}
