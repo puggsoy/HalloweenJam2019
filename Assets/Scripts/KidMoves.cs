@@ -1,9 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class KidMoves : MonoBehaviour
 {
+	private const string horizPrefix = "Horizontal_P";
+	private const string jumpPrefix = "Jump_P";
+
 	public float kidMoveSpeed = 3;
 	public float jumpForce = 10;
     public int kidNumber;
@@ -14,6 +18,8 @@ public class KidMoves : MonoBehaviour
 
 	private bool jumpDown = false;
 
+	private bool isTouchingGround = false;
+
 	private void Start()
     {
         kidRigidBody = GetComponent<Rigidbody2D>();
@@ -22,11 +28,21 @@ public class KidMoves : MonoBehaviour
 
 	private void FixedUpdate()
     {
-        if (kidNumber == 0)
-        {
-            return;
-        }
-        float hAxis = Input.GetAxis("Horizontal_P"+kidNumber.ToString());
+		string horizString = horizPrefix + kidNumber.ToString();
+		string jumpString = jumpPrefix + kidNumber.ToString();
+
+        try
+		{
+			float foo = Input.GetAxis(horizString);
+			float bar = Input.GetAxis(jumpString);
+		}
+		catch (Exception)
+		{
+			return;
+		}
+
+		float hAxis = Input.GetAxisRaw(horizString);
+		//float hAxis = Input.GetKey(KeyCode.RightArrow) ? 1 : 0;
 		kidVector2 = transform.TransformDirection(hAxis, 0, 0) * kidMoveSpeed * Time.fixedDeltaTime;
 		//Vector2 whereLegs = transform.position;
 		//kidRigidBody.MovePosition(whereLegs + kidVector2);
@@ -34,20 +50,21 @@ public class KidMoves : MonoBehaviour
 
 		animator?.SetBool("OnOff", hAxis != 0);
 
+		float velocityDeadzone = 0.1f;
 		Vector3 scale = transform.localScale;
 
-		if (hAxis > 0)
+		if (kidRigidBody.velocity.x > velocityDeadzone)
 		{
 			transform.localScale = new Vector2(Mathf.Abs(scale.x) * -1, scale.y);
 		}
-		else if (hAxis < 0)
+		else if (kidRigidBody.velocity.x < -velocityDeadzone)
 		{
 			transform.localScale = new Vector2(Mathf.Abs(scale.x) * 1, scale.y);
 		}
 
-		float jumpAxis = Input.GetAxisRaw("Jump_P"+kidNumber.ToString());
+		float jumpAxis = Input.GetAxisRaw(jumpString);
 
-		if (jumpAxis > 0 && !jumpDown)
+		if (jumpAxis > 0 && !jumpDown && isTouchingGround)
 		{
 			Jump();
 		}
@@ -55,10 +72,26 @@ public class KidMoves : MonoBehaviour
 		jumpDown = jumpAxis > 0;
 	}
 
-
-
 	private void Jump()
 	{
 		kidRigidBody.AddForce(new Vector2(0, jumpForce));
+	}
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (collision.collider.CompareTag("Floor") ||
+			collision.otherCollider.CompareTag("Floor"))
+		{
+			isTouchingGround = true;
+		}
+	}
+
+	private void OnCollisionExit2D(Collision2D collision)
+	{
+		if (collision.collider.CompareTag("Floor") ||
+			collision.otherCollider.CompareTag("Floor"))
+		{
+			isTouchingGround = false;
+		}
 	}
 }
