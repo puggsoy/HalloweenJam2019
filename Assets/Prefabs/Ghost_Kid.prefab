@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 5059329217729803485}
   m_Layer: 0
   m_Name: Consumer
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2021,7 +2021,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5293621792228898702}
-  m_LocalRotation: {x: 0, y: 0, z: 0.985524, w: 0.16953595}
+  m_LocalRotation: {x: 0, y: 0, z: 0.98552424, w: 0.16953468}
   m_LocalPosition: {x: 0.33091173, y: 0.44993117, z: 0}
   m_LocalScale: {x: 0.99999964, y: 0.99999964, z: 1}
   m_Children:
@@ -2599,7 +2599,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7490150773583847781}
-  m_LocalRotation: {x: 0, y: 0, z: 0.9850169, w: 0.17245832}
+  m_LocalRotation: {x: 0, y: 0, z: 0.98501676, w: 0.17245908}
   m_LocalPosition: {x: 0.21279337, y: -0.6428807, z: 0}
   m_LocalScale: {x: 0.99999964, y: 0.99999964, z: 1}
   m_Children:
@@ -2723,7 +2723,7 @@ GameObject:
   - component: {fileID: 8345056296126709557}
   m_Layer: 0
   m_Name: Bottom
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2780,7 +2780,7 @@ GameObject:
   - component: {fileID: 8345056296706988433}
   m_Layer: 0
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2837,7 +2837,7 @@ GameObject:
   - component: {fileID: 8345056297159803825}
   m_Layer: 0
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
