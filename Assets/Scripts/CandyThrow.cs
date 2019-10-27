@@ -32,7 +32,7 @@ public class CandyThrow : MonoBehaviour
         if (collider.gameObject.tag == "Arm")
         {
             CreateCandy();
-            //Debug.Log("Arm Throw");
+            OpenHand();
         }
     }
 
@@ -50,6 +50,11 @@ public class CandyThrow : MonoBehaviour
             candyNumbers -= 1;
         }
         while (candyNumbers > 0);
+    }
+
+    void OpenHand()
+    {
+        //open hand
     }
 
     int SelectCandy()
