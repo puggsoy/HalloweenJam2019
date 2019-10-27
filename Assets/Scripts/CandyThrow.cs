@@ -41,6 +41,7 @@ public class CandyThrow : MonoBehaviour
             CreateCandy();
             OpenHand();
             //Grandma SFX
+            //AudioManager.Instance.SFXgrandma();
         }
     }
 
