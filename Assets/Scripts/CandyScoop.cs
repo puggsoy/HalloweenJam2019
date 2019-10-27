@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class CandyScoop : MonoBehaviour
 {
+
+    public Sprite handClose;
+    private GameObject grandMaHand;
+    private SpriteRenderer grandMaHandSR;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        grandMaHand = GameObject.FindGameObjectWithTag("Hand");
+        grandMaHandSR = grandMaHand.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -27,7 +33,8 @@ public class CandyScoop : MonoBehaviour
 
     void ScoopCandy()
     {
-        //close hand
+        grandMaHandSR.sprite = handClose;
+        //Debug.Log("close hand");
         //scoop candy
     }
 }

@@ -9,6 +9,7 @@ public class GrandMa : MonoBehaviour
     private Rigidbody2D grandMaRigidBody;
     private float rotationSpeed = 0f;
 
+
     // Start is called before the first frame update
     void Start()
     {

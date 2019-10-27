@@ -10,15 +10,22 @@ public class CandyThrow : MonoBehaviour
     public int candyMax = 6;
     public float candyMinSpeed = .1f;
     public float candyMaxSpeed = .2f;
-    //public float candyMinDirection;
-    //public float candyMaxDirection;
+    public float candyXOrigin;
+    public float candyYOrigin;
     public List<GameObject> candyList;
     private int candyLength;
+    public Sprite handOpen;
+    private GameObject grandMaHand;
+    private SpriteRenderer grandMaHandSR;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         candyLength = candyList.Count;
+        grandMaHand = GameObject.FindGameObjectWithTag("Hand");
+        grandMaHandSR = grandMaHand.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -55,6 +62,7 @@ public class CandyThrow : MonoBehaviour
     void OpenHand()
     {
         //open hand
+        grandMaHandSR.sprite = handOpen;
     }
 
     int SelectCandy()
@@ -66,7 +74,7 @@ public class CandyThrow : MonoBehaviour
 
     GameObject SpawnCandy(int candyCount)
     {
-        GameObject candy = Instantiate(candyList[candyCount], new Vector2(-6.5f, 1.25f), Quaternion.identity);
+        GameObject candy = Instantiate(candyList[candyCount], new Vector2(candyXOrigin, candyYOrigin), Quaternion.identity);
         return candy;
     }
 
