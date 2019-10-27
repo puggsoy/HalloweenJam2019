@@ -40,6 +40,7 @@ public class CandyThrow : MonoBehaviour
         {
             CreateCandy();
             OpenHand();
+            //Grandma SFX
         }
     }
 
@@ -48,7 +49,6 @@ public class CandyThrow : MonoBehaviour
         candyNumbers = Random.Range(candyMin, candyMax);
 
         //Debug.Log("Candy to be spawned are "+candySpawns);
-        //for each candySpawns, random select prefab, spawn candy, random select direction, random select force
         do
         {
             int candyCount = SelectCandy();
