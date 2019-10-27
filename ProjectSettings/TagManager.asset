@@ -47,7 +47,7 @@ TagManager:
   - name: Background
     uniqueID: 3005763259
     locked: 0
-  - name: Floor/Walls
+  - name: Floor_Walls
     uniqueID: 806158823
     locked: 0
   - name: Candy
@@ -58,4 +58,7 @@ TagManager:
     locked: 0
   - name: Kids
     uniqueID: 76218945
+    locked: 0
+  - name: Foreground
+    uniqueID: 3615265429
     locked: 0
