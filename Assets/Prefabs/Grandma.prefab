@@ -60,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4949823800966962423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.31, y: 7.66, z: 0}
+  m_LocalPosition: {x: 3.21, y: 7.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4949823800885891020}
@@ -108,8 +108,8 @@ MonoBehaviour:
   candyMax: 6
   candyMinSpeed: 0.1
   candyMaxSpeed: 0.2
-  candyXOrigin: 5
-  candyYOrigin: 2
+  candyXOrigin: -20
+  candyYOrigin: 0.2
   candyList:
   - {fileID: 4883979286201237152, guid: 2b6fddda097212341873c432ef34328f, type: 3}
   - {fileID: 5156530972926784585, guid: 554b1ce322bcd4442af7bff66c8fd9c0, type: 3}
