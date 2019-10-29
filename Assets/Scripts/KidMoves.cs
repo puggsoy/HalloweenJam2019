@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class KidMoves : MonoBehaviour
 {
+	public event Action<int, int> OnCandyCollect;
+
 	private const string horizPrefix = "Horizontal_P";
 	private const string jumpPrefix = "Jump_P";
 
@@ -12,15 +14,14 @@ public class KidMoves : MonoBehaviour
 	public float jumpForce = 10;
     public int kidNumber;
 
-	public int Score { get; private set; }
-
     private Rigidbody2D kidRigidBody;
     private Vector2 kidVector2;
 	private Animator animator;
 
 	private bool jumpDown = false;
-
 	private bool isTouchingGround = false;
+
+	private int score = 0;
 
 	private void Start()
     {
@@ -97,6 +98,8 @@ public class KidMoves : MonoBehaviour
 
 	public void CollectCandy()
 	{
-		Score++;
+		score++;
+
+		OnCandyCollect?.Invoke(kidNumber, score);
 	}
 }

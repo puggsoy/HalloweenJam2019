@@ -29,13 +29,11 @@ public class MainMenu : MonoBehaviour
 			if (axis > 0)
 			{
 				buttonIndex++;
-				Debug.Log("right");
 				isPointing = true;
 			}
 			else if (axis < 0)
 			{
 				buttonIndex--;
-				Debug.Log("left");
 				isPointing = true;
 			}
 		}
