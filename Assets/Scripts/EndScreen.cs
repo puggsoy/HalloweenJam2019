@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
+public class EndScreen : MonoBehaviour
 {
 	public Button[] buttons;
 
@@ -59,7 +59,7 @@ public class MainMenu : MonoBehaviour
 		}
 	}
 
-	public void OnStartClick()
+	public void OnRestartClick()
 	{
 		SceneManager.LoadScene("GameScene");
 	}
