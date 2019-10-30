@@ -5,16 +5,15 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
 
-    //public GameObject playerHappySFX;
-    //private AudioSource[] playerHappys;
-    //private int allPlayerHappys;
-
     public GameObject kidSFX;
     private AudioSource[] kidAS;
     private int allKidSFX;
     public GameObject grandMaSFX;
     private AudioSource[] grandMaAS;
     private int allGrandMaSFX;
+    public GameObject musicMusic;
+    private AudioSource[] musicAS;
+    private int allMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +22,8 @@ public class AudioManager : MonoBehaviour
         allKidSFX = kidAS.Length;
         grandMaAS = grandMaSFX.GetComponentsInChildren<AudioSource>();
         allGrandMaSFX = grandMaAS.Length;
+        musicAS = musicMusic.GetComponentsInChildren<AudioSource>();
+        allMusic = musicAS.Length;
     }
 
     // Update is called once per frame
@@ -42,4 +43,11 @@ public class AudioManager : MonoBehaviour
         int randomGrandMaSFX = Random.Range(0, allGrandMaSFX);
         grandMaAS[randomGrandMaSFX].Play();
     }
+
+    public void MUSICmusic()
+    {
+        int randomMusic = Random.Range(0, allMusic);
+        musicAS[randomMusic].Play();
+    }
+
 }

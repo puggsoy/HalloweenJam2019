@@ -17,7 +17,7 @@ public class CandyThrow : MonoBehaviour
     public Sprite handOpen;
     private GameObject grandMaHand;
     private SpriteRenderer grandMaHandSR;
-
+    public AudioManager AM;
 
 
     // Start is called before the first frame update
@@ -88,6 +88,8 @@ public class CandyThrow : MonoBehaviour
         float speed = Random.Range(candyMinSpeed, candyMaxSpeed);
         Rigidbody2D candyBody = candy.GetComponent<Rigidbody2D>();
         candyBody.AddForce(candyDirection*speed, ForceMode2D.Impulse);
+        //SFX
+        AM.SFXgrandma();
     }
 
 }
