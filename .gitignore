@@ -60,3 +60,4 @@ crashlytics-build.properties
 Packages/Microsoft.CodeAnalysis.VersionCheckAnalyzer.2.9.6
 Packages/Microsoft.CodeQuality.Analyzers.2.9.6
 packages.config
+bin

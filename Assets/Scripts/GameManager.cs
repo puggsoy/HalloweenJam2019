@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-	private const int WINNER_AMOUNT = 2;
+	private const int WINNER_AMOUNT = 20;
 
 	public int playerNum = 3;
 	public KidMoves[] kidPrefabs;
