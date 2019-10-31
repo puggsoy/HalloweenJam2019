@@ -2051,11 +2051,6 @@ PrefabInstance:
       propertyPath: AM
       value: 
       objectReference: {fileID: 365215604}
-    - target: {fileID: 4949823801800631510, guid: 8bf8198a4033bdf4c80670b873fee110,
-        type: 3}
-      propertyPath: armSpeed
-      value: -12
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bf8198a4033bdf4c80670b873fee110, type: 3}
 --- !u!1 &782188953
