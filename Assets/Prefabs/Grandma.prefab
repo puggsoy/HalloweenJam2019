@@ -105,9 +105,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   candyMin: 1
-  candyMax: 6
+  candyMax: 5
   candyMinSpeed: 0.1
-  candyMaxSpeed: 0.2
+  candyMaxSpeed: 0.3
   candyXOrigin: -20
   candyYOrigin: 0.2
   candyList:
@@ -117,6 +117,7 @@ MonoBehaviour:
   - {fileID: 2063413898434798156, guid: 64c4cd3912d7e8e41a47f4c56993cbdc, type: 3}
   handOpen: {fileID: -426580659479776322, guid: 0e97d37ae53032e468ad538d02ab4933,
     type: 3}
+  AM: {fileID: 0}
 --- !u!1 &4949823801076896360
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e561835837f2740b65655ef8d97464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armSpeed: -3
+  armSpeed: -12
 --- !u!1 &4949823802289149424
 GameObject:
   m_ObjectHideFlags: 0

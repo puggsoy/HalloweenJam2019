@@ -38,10 +38,11 @@ public class CandyThrow : MonoBehaviour
     {
         if (collider.gameObject.tag == "Arm")
         {
+
             CreateCandy();
             OpenHand();
-            //Grandma SFX
-            //AudioManager.Instance.SFXgrandma();
+            //SFX
+            AM.SFXgrandma();
         }
     }
 
@@ -88,8 +89,6 @@ public class CandyThrow : MonoBehaviour
         float speed = Random.Range(candyMinSpeed, candyMaxSpeed);
         Rigidbody2D candyBody = candy.GetComponent<Rigidbody2D>();
         candyBody.AddForce(candyDirection*speed, ForceMode2D.Impulse);
-        //SFX
-        AM.SFXgrandma();
     }
 
 }
