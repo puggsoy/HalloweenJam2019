@@ -24,6 +24,7 @@ public class AudioManager : MonoBehaviour
         allGrandMaSFX = grandMaAS.Length;
         musicAS = musicMusic.GetComponentsInChildren<AudioSource>();
         allMusic = musicAS.Length;
+        MUSICmusic();
     }
 
     // Update is called once per frame
