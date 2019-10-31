@@ -49,7 +49,8 @@ public class KidMoves : MonoBehaviour
 		kidVector2 = transform.TransformDirection(hAxis, 0, 0) * kidMoveSpeed * Time.fixedDeltaTime;
 		//Vector2 whereLegs = transform.position;
 		//kidRigidBody.MovePosition(whereLegs + kidVector2);
-		kidRigidBody.AddForce(kidVector2);
+		//kidRigidBody.AddForce(kidVector2);
+		kidRigidBody.velocity = new Vector2(kidVector2.x, kidRigidBody.velocity.y);
 
 		animator?.SetBool("OnOff", hAxis != 0);
 
@@ -80,7 +81,7 @@ public class KidMoves : MonoBehaviour
 		kidRigidBody.AddForce(new Vector2(0, jumpForce));
 	}
 
-	private void OnCollisionEnter2D(Collision2D collision)
+	private void OnCollisionStay2D(Collision2D collision)
 	{
 		if (collision.collider.CompareTag("Floor"))
 		{

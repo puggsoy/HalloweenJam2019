@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460576cfca4e5904a80c1b5b9814e537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kidMoveSpeed: 50
+  kidMoveSpeed: 600
   jumpForce: 240
   kidNumber: 0
 --- !u!114 &6140847726301638500
