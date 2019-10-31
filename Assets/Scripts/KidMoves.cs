@@ -15,8 +15,10 @@ public class KidMoves : MonoBehaviour
     public int kidNumber;
 
     private Rigidbody2D kidRigidBody;
-    private Vector2 kidVector2;
 	private Animator animator;
+
+    private float kidVelocity = 0;
+    private float maxVelocity = 30;
 
 	private bool jumpDown = false;
 	private bool isTouchingGround = false;
@@ -45,12 +47,19 @@ public class KidMoves : MonoBehaviour
 		}
 
 		float hAxis = Input.GetAxisRaw(horizString);
-		//float hAxis = Input.GetKey(KeyCode.RightArrow) ? 1 : 0;
-		kidVector2 = transform.TransformDirection(hAxis, 0, 0) * kidMoveSpeed * Time.fixedDeltaTime;
+        //float hAxis = Input.GetKey(KeyCode.RightArrow) ? 1 : 0;
+        float acceleration = hAxis * kidMoveSpeed;// * Time.fixedDeltaTime;
+        kidVelocity += acceleration;
+        if (Mathf.Abs(kidVelocity) > maxVelocity)
+        {
+            kidVelocity = Mathf.Sign(kidVelocity) * maxVelocity;
+        }
 		//Vector2 whereLegs = transform.position;
 		//kidRigidBody.MovePosition(whereLegs + kidVector2);
 		//kidRigidBody.AddForce(kidVector2);
-		kidRigidBody.velocity = new Vector2(kidVector2.x, kidRigidBody.velocity.y);
+		kidRigidBody.velocity = new Vector2(kidVelocity, kidRigidBody.velocity.y);
+
+        kidVelocity *= 0.95f;
 
 		animator?.SetBool("OnOff", hAxis != 0);
 

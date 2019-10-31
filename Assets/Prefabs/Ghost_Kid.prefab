@@ -953,7 +953,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.21283138, y: 4.4839826}
+  m_Offset: {x: -0.16370922, y: 4.4839826}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -964,7 +964,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2222412, y: 3.922944}
+  m_Size: {x: 2.746437, y: 3.922944}
   m_EdgeRadius: 0
 --- !u!1 &2232195493259282944
 GameObject:
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460576cfca4e5904a80c1b5b9814e537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kidMoveSpeed: 600
+  kidMoveSpeed: 1
   jumpForce: 240
   kidNumber: 0
 --- !u!114 &7579087758534445189
@@ -2021,7 +2021,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5293621792228898702}
-  m_LocalRotation: {x: 0, y: 0, z: 0.98552424, w: 0.16953468}
+  m_LocalRotation: {x: 0, y: 0, z: 0.985524, w: 0.16953611}
   m_LocalPosition: {x: 0.33091173, y: 0.44993117, z: 0}
   m_LocalScale: {x: 0.99999964, y: 0.99999964, z: 1}
   m_Children:
@@ -2599,7 +2599,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7490150773583847781}
-  m_LocalRotation: {x: 0, y: 0, z: 0.98501676, w: 0.17245908}
+  m_LocalRotation: {x: 0, y: 0, z: 0.9850169, w: 0.17245832}
   m_LocalPosition: {x: 0.21279337, y: -0.6428807, z: 0}
   m_LocalScale: {x: 0.99999964, y: 0.99999964, z: 1}
   m_Children:
@@ -2755,7 +2755,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011417866, y: -0.8686651}
+  m_Offset: {x: 0.054742455, y: -0.8686651}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2766,7 +2766,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0347834, y: 0.31089926}
+  m_Size: {x: 2.7748373, y: 0.31089926}
   m_EdgeRadius: 0
 --- !u!1 &8345056296706988435
 GameObject:

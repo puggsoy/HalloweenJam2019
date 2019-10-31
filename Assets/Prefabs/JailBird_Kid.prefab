@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 460576cfca4e5904a80c1b5b9814e537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kidMoveSpeed: 600
+  kidMoveSpeed: 1
   jumpForce: 240
   kidNumber: 0
 --- !u!114 &6140847726301638500
@@ -686,7 +686,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.011417866, y: -0.8686651}
+  m_Offset: {x: 0.065954804, y: -0.8686651}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -697,7 +697,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0347834, y: 0.31089926}
+  m_Size: {x: 2.7730062, y: 0.31089926}
   m_EdgeRadius: 0
 --- !u!1 &2192978049958068427
 GameObject:
@@ -1722,7 +1722,7 @@ GameObject:
   - component: {fileID: 2260010091273932600}
   - component: {fileID: 626296682088968623}
   - component: {fileID: 1112258600721632577}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot_02 copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2018,7 +2018,7 @@ GameObject:
   - component: {fileID: 1415109272352016121}
   - component: {fileID: 4523675438548693617}
   - component: {fileID: 6337712172259556054}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Foot_01 copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3105,7 +3105,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.21283138, y: 4.4839826}
+  m_Offset: {x: -0.16830122, y: 4.4839826}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3116,7 +3116,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.2222412, y: 3.922944}
+  m_Size: {x: 2.7175643, y: 3.922944}
   m_EdgeRadius: 0
 --- !u!1 &8041591237239851959
 GameObject:
