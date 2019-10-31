@@ -54,7 +54,6 @@ public class KidMoves : MonoBehaviour
 
 		animator?.SetBool("OnOff", hAxis != 0);
 
-		float velocityDeadzone = 0.1f;
 		Vector3 scale = transform.localScale;
 
 		if (hAxis > 0)
