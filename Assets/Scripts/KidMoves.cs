@@ -11,7 +11,7 @@ public class KidMoves : MonoBehaviour
 	private const string jumpPrefix = "Jump_P";
 
 	public float kidMoveSpeed = 3;
-	public float jumpForce = 10;
+	public float jumpForce = 240;
     public int kidNumber;
 
     private Rigidbody2D kidRigidBody;
